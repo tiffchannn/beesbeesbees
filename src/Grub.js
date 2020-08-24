@@ -3,12 +3,12 @@ var Grub = function() {
   this.age = 0;
   this.color = 'pink';
   this.food = 'jelly';
-  this.eat = function();
+  this.eat = function ();
 };
 
-Grub.protoype.eat = function() {
+// Grub.protoype.eat = function() {
 
-};
+// };
 
  // age property that is set to 0
   // color property that is set to pink
