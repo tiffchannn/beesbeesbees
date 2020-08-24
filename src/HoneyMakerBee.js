@@ -17,7 +17,8 @@ var HoneyMakerBee = function() {
 };
 
 // set the prototype
-HoneyMakerBee.protoype= Object.create(Bee.prototype);
+HoneyMakerBee.prototype= Object.create(Bee.prototype);
+
 // set the constructor
 HoneyMakerBee.prototype.constructor = HoneyMakerBee;
 
