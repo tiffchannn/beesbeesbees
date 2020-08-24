@@ -19,6 +19,7 @@ var Bee = function() {
 };
 
 // set the prototype - will delegate all failed lookups on Bee to Grub to find shared methods stored there
+// creates a new object
 Bee.protoype= Object.create(Grub.prototype);
 
 // set the constructor - creates a delegation relationship; all other bees will report to this constructor
