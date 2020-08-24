@@ -11,7 +11,10 @@ var Bee = function() {
   a job property that is set to keep on growing
   */
 
-  Grub.call(this, age, color, food, eat);
+  Grub.call(this);
+  this.age = 5;
+  this.color = 'yellow';
+  this.job = 'keep on growing';
 
 };
 
@@ -19,8 +22,4 @@ var Bee = function() {
 Bee.protoype= Object.create(Grub.prototype);
 
 // set the constructor - creates a delegation relationship; all other bees will report to this constructor
-Bee.prototype.constructor = Bee.protoype;
-
-Bee.protoype.job = function() {
-
-};
+Bee.prototype.constructor = Bee;
